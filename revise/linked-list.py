@@ -57,7 +57,15 @@ class LinkedList:
             ptr = ptr.next
         
         ptr.next = node1
-        return   
+        return 
+
+    def insertAtEnd(self, val):
+        ptr = self.head
+        
+
+    def insertAtIndex(self, value, idx):
+        a = 1
+        
     
     
     def printList(self):
