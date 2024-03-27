@@ -8,4 +8,6 @@ class Solution:
         
         i = 0
         while i < len(A):
-            
+            searchWindow = i + power - 1
+            for i in range(searchWindow, i+1, -1):
+                

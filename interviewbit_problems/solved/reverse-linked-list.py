@@ -19,6 +19,8 @@ class Solution:
     def reverseList(self, A):
         headA = A
         
+        if headA.next==None:
+            return headA
         isFirstNode = True
         
         ptr1 = headA

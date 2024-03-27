@@ -3,20 +3,6 @@
 
 using namespace std;
 
-// class Solution {
-// public:
-//     vector<int> spiralOrder(vector<vector<int> >& matrix) {
-//         for(int i=0;i<matrix.size(); i++) {
-//             for(int j=0;j<matrix[0].size(); j++) {
-//                 cout << matrix[i][j] << " ";
-//             }
-//             cout << "\n";
-//         }
-//     }
-//     // vector<int> result{1,2};
-//     // return result;
-// };
-
 void vectorSol() {
     vector<vector<int> > A
     { 
@@ -37,8 +23,6 @@ void vectorSol() {
     int count = 0;
     int rows = A.size();
     int cols = A[0].size();
-    std::cout << rows << "\n";
-    std::cout << cols << "\n";
     bool right = true;
     bool left = false;
     bool down = false;
