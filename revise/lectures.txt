@@ -1,0 +1,81 @@
+time complexity
+	to judge 2 algos written in different languages and  running on different machines
+	actual time will depend on programming language, processing power, 32 or 64 bit, read and write speed, machine config
+	
+	O(nlogn) is smaller than O(n) for smaller inputs
+
+	Big-o tells worst case running time of an algorithm
+	also, O(n) refers to class of functions that grow as quickly as linear functions
+
+big-omega - tells the best running time
+
+big-theta - avg running time of an algorithm
+
+eg
+	O(2^n) - find all subsets
+	O(n!) - finding permutations
+
+sorting algos - insertion, selection, bubble, merge, quick, heap, bucket, radix, tim, shell
+
+
+general rules to calculate time complexity
+
+we analyze time complexity for
+	very large input size
+	worst case scenario
+	
+
+space complexity
+
+how much memory is used
+auxillary space - it is the extra space used by the algo apart from the input space
+
+
+
+LEVEL2
+
+introduction to pointers in c/c++
+
+memory allocation depend on the datatype and the compiler
+
+pointers - they are variables storing address of another variable
+
+int a;
+int *p;
+p = &a
+print(p) //address of a
+print(&a);
+print(*p) // value of 5
+
+
+pointers and arrays
+
+int a[3];
+a points to base address
+ith element address can be (a+i) or &a[i]
+ith element value can be *(a+i) or a[i]
+
+a++ gives compilation error
+int *p = a
+p++ works
+base address cannot be updated
+
+
+
+pointers and 2-d arrays
+
+int a[5];
+int *p = a;
+
+int b[2][3];
+
+2d arrays are stored as continuous 1d array
+int *p = b //fails
+b is a pointer to 1d array of size 3
+int *p[3] = b //works
+print(b) or print(&b[0]) //address of b[0] //400
+print(*b) or b[0] or &b[0][0]  // same
+print(b+1) //412
+print *(b+1) or b[1] or &b[1][0]
+
+	

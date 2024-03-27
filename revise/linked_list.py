@@ -1,7 +1,7 @@
 class Node:
     
     def __init__(self, value):
-        self.data = value
+        self.val = value
         self.next = None
         
 class LinkedList:
@@ -59,19 +59,14 @@ class LinkedList:
         ptr.next = node1
         return 
 
-    def insertAtEnd(self, val):
-        ptr = self.head
-        
-
-    def insertAtIndex(self, value, idx):
-        a = 1
+    
         
     
     
     def printList(self):
         ptr = self.head
         while ptr!=None:
-            print(ptr.data, " -> ", end="")
+            print(ptr.val, " -> ", end="")
             ptr = ptr.next
         print("")
         return
